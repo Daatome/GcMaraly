@@ -1,0 +1,7 @@
+#navbarOpacity{
+    transition: 0.2s ease-in;
+
+}
+#navbarOpacity:hover{
+    opacity: 100% !important;
+}

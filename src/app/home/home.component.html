@@ -1,0 +1,64 @@
+<div class="home-fondo1  py-5  " >
+
+    <div class="container-xl mt-5 " data-aos="fade-down" data-aos-duration="1000">
+        <div class="row  justify-content-center mx-2 bg-dark fondo-transparente ">
+            <div class=" col-lg-6   my-3 row justify-content-center align-items-center me-md-3">
+                <img src="https://cdn.dribbble.com/userupload/4052532/file/original-7560d05e4953edca39efdbdbe31925f9.png?compress=1&resize=400x300&vertical=top" alt="logo" class="img-fluid  ">
+            </div>
+            <div class="col-lg-5 text-white    my-5 row align-items-center justify-content-center ">
+                <h2 class="mt-2 text-center">Somos Maraly</h2>
+                <p class="mt-5 ">Nos caracterizamos por la edificación de obra civil contando con un equipo joven de ingenieros comprometidos con la calidad, sustentabilidad, costo y ejecución en tiempo y forma de toda obra en la que se participe, teniendo por objetivo la mejora del entorno, con la solución satisfactoria de los problemas o necesidades de nuestros clientes.<br> Nuestros trabajos buscan estar a la vanguardia aplicando conocimientos de punta, así como innovaciones en cadauno de los procesos constructivos donde la empresa participa</p>
+                <a href="/us" class="btn btn-outline-light my-3 text-center">Conoce mas sobre nosotros</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-xl my-4" >
+    <h2 class="text-center" data-aos="fade-down">Algunos de nuestros clientes</h2>
+    <div class="row justify-content-center align-self-stretch mx-3"  >
+            <div *ngFor="let cliente of clientes; index as i; " class="col-md-3 row justify-content-center m-3 card shadow-lg" data-aos="zoom-in-down" data-aos-duration="800" >
+                <div class="">
+                    <img src="{{cliente.imagen}}" class="card-img-top mt-1">
+                    <div class="card-body">
+                        <h5 class="card-title">{{cliente.nombre}}</h5>
+                        <p class="card-text">{{cliente.descripcion}}</p>
+                        <a href="{{cliente.sitioWeb}}" class="btn btn-dark" target="_blank" >Ver sitio</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="home-fondo2 ">
+
+    <div class="container-xl"  data-aos="zoom-out-right" data-aos-duration="1500">
+        <div class="row  justify-content-center mx-2">
+            <div class="fondo-transparente col-md-5 bg-dark m-5">
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="home-fondo3">
+
+    <div class="container-xl " data-aos="fade-up" data-aos-duration="1000" >
+        <div class="row justify-content-center mx-2">
+            <div class="fondo-transparente col-md-5 bg-dark m-5">
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+                <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
