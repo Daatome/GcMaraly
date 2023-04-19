@@ -1,7 +1,27 @@
 :root{
-    color1: #fff;
+    --color1: rgb(244,185,19);
+    --color2: rgb(226,21,44);
+    --color3: rgb(8,54,255);
+    --color4: rgb(0,0,0,0);
 }
 
+.bottom-line{
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: rgb(8,54,255) ;
+}
+
+.bg-principal{
+    background-color: rgb(244,185,19);
+}
+
+.btn-outline-danger:hover{
+    background-color: rgb(226,21,44) !important;
+} 
+
+.text-primary{
+    color: rgb(8,54,255) !important;
+}
 .home-fondo1{
     background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
     height: 100%;
@@ -27,12 +47,23 @@
     background-attachment: fixed;
 }
 
-.fondo-transparente{
-    opacity: 80% !important;
-    border-radius: 20px;
-    transition: 0.2s ease-in ;
-}
-.fondo-transparente:hover{
-    opacity: 100% !important;
+@media (min-width:768px){
+    
+    .fondo-transparente{
+        opacity: 80% !important;
+        border-radius: 20px;
+        transition: 0.2s ease-in ;
+    }
+    .fondo-transparente:hover{
+        opacity: 100% !important;
+    }
 }
 
+.servicios-btn{
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(8,54,255) ;
+}
+.servicios-btn:hover{
+    color:rgb(8,54,255);
+}

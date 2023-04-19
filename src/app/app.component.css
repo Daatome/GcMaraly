@@ -1,7 +1,18 @@
+:root{
+    --color1: rgb(244,185,19);
+    --color2: rgb(226,21,44);
+    --color3: rgb(34,67,49);
+    --color4: rgb(0,0,0,0);
+}
+
 #navbarOpacity{
     transition: 0.2s ease-in;
 
 }
 #navbarOpacity:hover{
     opacity: 100% !important;
+}
+
+.logo-navbar{
+    max-width: 60px;
 }
