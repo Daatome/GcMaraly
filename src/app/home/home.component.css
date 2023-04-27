@@ -10,6 +10,10 @@
     border-width: 0px 0px 3px 0px;
     border-color: rgb(8,54,255) ;
 }
+.justify-text{
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
 
 .bg-principal{
     background-color: rgb(244,185,19);
@@ -47,17 +51,20 @@
     background-attachment: fixed;
 }
 
+.fondo-transparente{
+    border-radius: 20px;
+}
 @media (min-width:768px){
     
     .fondo-transparente{
-        opacity: 80% !important;
-        border-radius: 20px;
+        opacity: 90% !important;
         transition: 0.2s ease-in ;
     }
     .fondo-transparente:hover{
         opacity: 100% !important;
     }
 }
+
 
 .servicios-btn{
     border-style: solid;
@@ -66,4 +73,15 @@
 }
 .servicios-btn:hover{
     color:rgb(8,54,255);
+}
+
+@media (min-width:768px){
+    
+    .mapa{
+        height: 700px;
+    }
+}
+.mapa{
+    width: 100%;
+    border-radius: 20px;
 }

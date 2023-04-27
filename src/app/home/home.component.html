@@ -1,4 +1,4 @@
-<div class="home-fondo1  py-5  " >
+<div class="home-fondo1  py-5  " id="inicio" >
 
     <div class="container-xl mt-5 " data-aos="fade-down" data-aos-duration="1000">
         <div class="row  justify-content-center mx-2 bg-principal fondo-transparente ">
@@ -19,14 +19,15 @@
 
 <div class="container-xl my-4" data-aos="fade-down " >
     <h2 class="text-center " >Algunos de nuestros clientes</h2>
+    <h1 class="bottom-line"></h1>
     <div class="row justify-content-center align-self-stretch mx-3"  >
             <div *ngFor="let cliente of clientes; index as i; " class="col-md-3 row justify-content-center m-3 card shadow-lg" data-aos="zoom-in-down" data-aos-duration="800" >
                 <div class="">
-                    <img src="{{cliente.imagen}}" class="card-img-top mt-1">
+                    <img src="{{cliente.imagen}}" alt="imagen-cliente" class="card-img-top mt-1">
                     <div class="card-body">
                         <h5 class="card-title">{{cliente.nombre}}</h5>
                         <h1 class="bottom-line"></h1>
-                        <p class="card-text">{{cliente.descripcion}}</p>
+                        <p class="card-text ">{{cliente.descripcion}}</p>
                         <a href="{{cliente.sitioWeb}}" class="btn btn-danger" target="_blank" >Ver sitio</a>
                     </div>
                 </div>
@@ -61,17 +62,48 @@
     </div>
 </div>
 <div class="home-fondo3">
-
-    <div class="container-xl " data-aos="fade-up" data-aos-duration="1000" >
+    <div class="container-xl " >
         <div class="row justify-content-center mx-2 ">
-            <div class="fondo-transparente col-md-5 bg-principal text-dark m-5">
-                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
-                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
-                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
-                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat corporis excepturi sit quod eos sapiente labore tenetur, nam, quo, autem earum pariatur quae voluptas repellat ipsam officia dolorem optio. Culpa!</p>
+            <div class="fondo-transparente col-md-5 bg-principal text-dark m-5 p-5"  data-aos="flip-right" data-aos-duration="1000" >
+                <h3 class="text-center ">Construccion de muros de block</h3>
+                <h1 class="bottom-line"></h1>
+                <p class="h6 my-3 justify-text">Mas de 40,000 (cuarenta mil) metros cuadrados de muros de block con diferentes alturas y especificaciones en el proyecto Mitikah.</p>
             </div>
+            <div class="fondo-transparente col-md-5 bg-principal text-dark m-5 p-5"  data-aos="flip-left" data-aos-duration="1000" >
+                <h3 class="text-center ">Colados</h3>
+                <h1 class="bottom-line"></h1>
+                <p class="h6 my-3 justify-text">Mas de 100,000 (cien mil) metros cuadrados de losas en diferentes proyectos.</p>
+            </div>
+            <div class="fondo-transparente col-md-5 bg-principal text-dark m-5 p-5"  data-aos="flip-up" data-aos-duration="1000" >
+                <h3 class="text-center ">Equipo Especializado</h3>
+                <h1 class="bottom-line"></h1>
+                <p class="h6 my-3 justify-text">Contamos con equipo especializado para realizar nuestros trabajos para asi tener los mejores rendimientos y precios.</p>
+            </div>
+            
         </div>
 
+    </div>
+</div>
+<div class="container-xl my-4" data-aos="fade-down " id="contacto" >
+    <h2 class="text-center" >Contáctanos </h2>
+    <h1 class="bottom-line"></h1>
+    <div class="row mt-5 align-items-top">
+        <div class="col-md-6 me-2">
+            <h3>Encuentranos en:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d343.27502242688706!2d-98.92221025899933!3d19.28672643867891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1e9db73055bf%3A0x6f9f3d3e134cd9!2sCalle%20Nte.%205%20956%2C%20San%20Isidro%2C%2056617%20Xico%2C%20M%C3%A9x.!5e0!3m2!1sen!2smx!4v1682635741162!5m2!1sen!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="shadow-lg mapa mt-3" data-aos="fade-right" data-aos-duration="1000"></iframe>
+        </div>
+        <div class="col-md-4 mt-5">
+            <h3>Correo Electrónico:</h3>
+            <p>contacto@gcmaraly.com</p>
+            <h1 class="bottom-line mb-3"></h1>
+
+            <h3>Teléfono:</h3>
+            <p>5512345678</p>
+            <h1 class="bottom-line mb-3"></h1>
+
+            <h3>Oficina:</h3>
+            <p>Calle Nte. 5 956, San Isidro, 56617 Xico, Méx.</p>
+        </div>
     </div>
 </div>
 
