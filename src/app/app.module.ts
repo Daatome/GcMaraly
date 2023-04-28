@@ -13,6 +13,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { NgOptimizedImage } from '@angular/common';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +31,11 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    NgOptimizedImage
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

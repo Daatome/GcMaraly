@@ -1,0 +1,20 @@
+:root{
+    --color1: rgb(244,185,19);
+    --color2: rgb(226,21,44);
+    --color3: rgb(8,54,255);
+    --color4: rgb(0,0,0,0);
+}
+.justify-text{
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
+.bottom-line{
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: rgb(8,54,255) ;
+}
+
+.bg-principal{
+    background-color: rgb(244,185,19);
+}
