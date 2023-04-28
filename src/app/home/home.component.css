@@ -26,13 +26,13 @@
 .text-primary{
     color: rgb(8,54,255) !important;
 }
+
 .home-fondo1{
     background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 .home-fondo2{
     background-image: url("https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg");
@@ -40,7 +40,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 .home-fondo3{
     background-image: url("https://cdn.pixabay.com/photo/2016/02/01/21/15/excavator-1174428_960_720.jpg");
@@ -48,7 +47,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+}
+@media (min-width:768px){
+    
+    .home-fondo1{
+        background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .home-fondo2{
+        background-image: url("https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .home-fondo3{
+        background-image: url("https://cdn.pixabay.com/photo/2016/02/01/21/15/excavator-1174428_960_720.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
 }
 
 .fondo-transparente{
