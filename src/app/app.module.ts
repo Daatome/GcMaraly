@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 
 import { NgOptimizedImage } from '@angular/common';
 
+import { NgImageSliderModule} from 'ng-image-slider';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { NgOptimizedImage } from '@angular/common';
     AppRoutingModule,
     FormsModule,
     CommonModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent],

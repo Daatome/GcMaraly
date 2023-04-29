@@ -1,0 +1,15 @@
+@media (min-width:768px){
+    
+    .mapa{
+        height: 700px;
+    }
+}
+.mapa{
+    width: 100%;
+    border-radius: 20px;
+}
+.bottom-line{
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: rgb(8,54,255) ;
+}
