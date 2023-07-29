@@ -110,3 +110,10 @@
     width: 100%;
     border-radius: 20px;
 }
+
+.popup-button{
+    transition: all ease-in 200ms;
+}
+.popup-button:hover{
+    transform: translateY(-10px);
+}

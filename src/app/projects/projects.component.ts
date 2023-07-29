@@ -201,63 +201,40 @@ export class ProjectsComponent {
     {
       image: 'assets/images/projects/laViga/3.png',
       thumbImage: 'assets/images/projects/laViga/3.png',
-      title: 'Demolicion de losa existente',
+      title: 'Foso de elevadores',
       alt: 'laViga',
     }, 
     {
       image: 'assets/images/projects/laViga/4.png',
       thumbImage: 'assets/images/projects/laViga/4.png',
-      title: 'Demolicion de losa existente',
+      title: 'Colocación de casetón y armado de losa',
       alt: 'laViga',
     }, 
     {
       image: 'assets/images/projects/laViga/5.png',
       thumbImage: 'assets/images/projects/laViga/5.png',
-      title: 'Apuntalamiento de vigas',
+      title: 'Colocación de casetón y armado de losa',
       alt: 'laViga',
     }, 
     {
       image: 'assets/images/projects/laViga/6.png',
       thumbImage: 'assets/images/projects/laViga/6.png',
-      title: 'Apuntalamiento de vigas',
+      title: 'Armado de nevaduras',
       alt: 'laViga',
     }, 
     {
       image: 'assets/images/projects/laViga/7.png',
       thumbImage: 'assets/images/projects/laViga/7.png',
-      title: 'Cimbrado y armado de losa',
+      title: 'Cimbrado de jardineras',
       alt: 'laViga',
     }, 
     {
       image: 'assets/images/projects/laViga/8.png',
       thumbImage: 'assets/images/projects/laViga/8.png',
-      title: 'Barrenos para refuerzo',
+      title: 'Colado con acabado floteado',
       alt: 'laViga',
     }, 
-    {
-      image: 'assets/images/projects/laViga/9.png',
-      thumbImage: 'assets/images/projects/laViga/9.png',
-      title: 'Colado de losa',
-      alt: 'laViga',
-    }, 
-    {
-      image: 'assets/images/projects/laViga/10.png',
-      thumbImage: 'assets/images/projects/laViga/10.png',
-      title: 'Colado de rampa y repellados',
-      alt: 'laViga',
-    }, 
-    {
-      image: 'assets/images/projects/laViga/11.png',
-      thumbImage: 'assets/images/projects/laViga/11.png',
-      title: 'Colado de rampa y repellados',
-      alt: 'laViga',
-    }, 
-    {
-      image: 'assets/images/projects/laViga/12.png',
-      thumbImage: 'assets/images/projects/laViga/12.png',
-      title: 'Colado de rampa y repellados',
-      alt: 'laViga',
-    }, 
+    
   ];
   metroZapata: Array<object> = [
     {
