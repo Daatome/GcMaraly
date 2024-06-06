@@ -7,6 +7,78 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  losreyesPark: Array<object>= [
+    {
+      image: 'assets/images/projects/losReyes/1.png',
+      thumbImage: 'assets/images/projects/losReyes/1.png',
+      alt: 'Los Reyes',
+      order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/2.png',
+      thumbImage: 'assets/images/projects/losReyes/2.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/3.png',
+      thumbImage: 'assets/images/projects/losReyes/3.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/4.png',
+      thumbImage: 'assets/images/projects/losReyes/4.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/5.png',
+      thumbImage: 'assets/images/projects/losReyes/5.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/6.png',
+      thumbImage: 'assets/images/projects/losReyes/6.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/7.png',
+      thumbImage: 'assets/images/projects/losReyes/7.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/8.png',
+      thumbImage: 'assets/images/projects/losReyes/8.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/9.png',
+      thumbImage: 'assets/images/projects/losReyes/9.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/10.png',
+      thumbImage: 'assets/images/projects/losReyes/10.png',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/11.png',
+      thumbImage: 'assets/images/projects/losReyes/11.png',
+      alt: 'Los Reyes',
+
+    },
+    
+  ];
+
+
   olimpoPark: Array<object>= [
     {
       image: 'assets/images/projects/olimpoPark/1.jpeg',
