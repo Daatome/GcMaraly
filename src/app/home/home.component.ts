@@ -35,7 +35,7 @@ export class HomeComponent {
         //imagen:"https://media.licdn.com/dms/image/D4E0BAQEyAdTwW0tn1A/company-logo_200_200/0/1667409951781?e=2147483647&v=beta&t=H7mYgjfCLsAH5D36d_dafk-DAodsoXkAnZgAnjW0-xU",
         imagen:"assets/images/clientes/parks.jpg",
         descripcion:"PARKS es una empresa dedicada al desarrollo,construcción y comercialización de una amplia gama de negocios inmobiliarios, entre ellos Industriales, comerciales, corporativos y de uso mixto. Cuenta con uno de los proyectos más exclusivos de México llamado MITIKAH.",
-        sitioWeb: "https://www.parks.com.mx/"
+        sitioWeb: "https://phh.com.mx"
       },
       {
         nombre: "Postensa",
@@ -49,14 +49,20 @@ export class HomeComponent {
         imagen:"assets/images/clientes/seica.jpg",
         descripcion:"Desde el año 2000, SEICA ha sido una empresa especializada en proyectos industriales y comerciales a lo largo de la república mexicana. Líder en el sector de construcción y administración de proyectos sustentables, proyectos BIM, sistema Tilt-Up, Proyectos para Certificación LEED.",
         sitioWeb:"http://seica.com.mx/"
+      },
+      {
+        nombre: "CRAFT",
+        imagen:"assets/images/clientes/craft.jpg",
+        descripcion:"CRAFT es un equipo altamente calificado en planeación y arquitectura que garantiza el éxito de cada proyecto. Nuestra amplia red de consultores y especialistas en diversas disciplinas agiliza y garantiza el desarrollo del proyecto, controlando cada fase del diseño a través de filtros y un control riguroso gracias a nuestra amplia experiencia.",
+        sitioWeb:"https://craft.com.mx"
       }
     ];
-    
-  }
-  
-  
 
-  
-  
+  }
+
+
+
+
+
 
 }

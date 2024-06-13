@@ -21,12 +21,32 @@
 
 .btn-outline-danger:hover{
     background-color: rgb(226,21,44) !important;
-} 
+}
 
 .text-primary{
     color: rgb(8,54,255) !important;
 }
+.overlay {
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el 0.5 para ajustar la opacidad */
+  z-index: 1;
+  transition: all ease-in 0.5s;
+}
+.overlay:hover{
+  background-color: rgba(0, 0, 0, 0.1); /* Cambia el 0.5 para ajustar la opacidad */
 
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+}
 .home-fondo1{
     background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
     height: 100%;
@@ -36,10 +56,10 @@
 }
 .home-fondo2{
     background-image: url("https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg");
-    height: 100%;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: bottom left;
 }
 .home-fondo3{
     background-image: url("https://cdn.pixabay.com/photo/2016/02/01/21/15/excavator-1174428_960_720.jpg");
@@ -48,8 +68,30 @@
     background-size: cover;
     background-position: center center;
 }
+.home-fondo4{
+  background-image: url("https://media.licdn.com/dms/image/D5612AQH4r7nvyc-2KA/article-cover_image-shrink_720_1280/0/1687283213696?e=2147483647&v=beta&t=Ox6S_ckZ--mTnkVyqaPwjG5WMTMj25FlaJ8AQXchG90");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.home-fondo5{
+  background-image: url("https://cdn.pixabay.com/photo/2023/11/24/17/22/city-8410353_1280.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.home-fondo6{
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/06/16/38/steelworkers-1029665_1280.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 @media (min-width:768px){
-    
+
     .home-fondo1{
         background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
         height: 100%;
@@ -60,10 +102,10 @@
     }
     .home-fondo2{
         background-image: url("https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg");
-        height: 100%;
+        height: 500px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: bottom right;
         background-attachment: fixed;
     }
     .home-fondo3{
@@ -74,13 +116,37 @@
         background-position: center center;
         background-attachment: fixed;
     }
+    .home-fondo4{
+      background-image: url("https://media.licdn.com/dms/image/D5612AQH4r7nvyc-2KA/article-cover_image-shrink_720_1280/0/1687283213696?e=2147483647&v=beta&t=Ox6S_ckZ--mTnkVyqaPwjG5WMTMj25FlaJ8AQXchG90");
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+  }
+  .home-fondo5{
+    background-image: url("https://cdn.pixabay.com/photo/2023/11/24/17/22/city-8410353_1280.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+  }
+  .home-fondo6{
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/09/07/12/construction-3384691_1280.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center right;
+    background-attachment: fixed;
+  }
 }
 
 .fondo-transparente{
     border-radius: 20px;
 }
 @media (min-width:768px){
-    
+
     .fondo-transparente{
         opacity: 90% !important;
         transition: 0.2s ease-in ;
@@ -101,7 +167,7 @@
 }
 
 @media (min-width:768px){
-    
+
     .mapa{
         height: 700px;
     }

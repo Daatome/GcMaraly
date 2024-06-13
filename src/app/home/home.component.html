@@ -8,7 +8,7 @@
               <img src="assets/images/logoCompressed.jpg" alt="logo" class="img-fluid   ">
           </div>
           <div class="col-lg-5 text-dark    my-5 row align-items-center justify-content-center ">
-              <h2 class="mt-2 text-center">Somos Maraly</h2>
+              <h2 class="mt-2 text-center">SOMOS MARALY</h2>
               <h1 class="bottom-line"></h1>
 
               <p class="mt-5 ">Nos caracterizamos por la edificación de obra civil contando con un equipo joven de ingenieros comprometidos con la calidad, sustentabilidad, costo y ejecución en tiempo y forma de toda obra en la que se participe, teniendo por objetivo la mejora del entorno, con la solución satisfactoria de los problemas o necesidades de nuestros clientes.<br> Nuestros trabajos buscan estar a la vanguardia aplicando conocimientos de punta, así como innovaciones en cada uno de los procesos constructivos donde la empresa participa</p>
@@ -22,44 +22,60 @@
 <div class="container-xl my-4" data-aos="fade-down " >
   <h2 class="text-center " >Algunos de nuestros clientes</h2>
   <h1 class="bottom-line"></h1>
-  <div class="row justify-content-center align-self-stretch mx-3"  >
-          <div *ngFor="let cliente of clientes; index as i; " class="col-md-3 row justify-content-center m-3 card shadow-lg" data-aos="zoom-in-down" data-aos-duration="800" >
+  <div class="row justify-content-center align-self-stretch ms-5 "  >
+          <div *ngFor="let cliente of clientes; index as i; " class="col-md-2 mt-3 me-5 p-2  row justify-content-center  card shadow-lg" data-aos="zoom-in-down" data-aos-duration="800" >
               <div class="">
-                  <img src="{{cliente.imagen}}" alt="imagen-cliente" class="card-img-top mt-1">
-                  <div class="card-body">
-                      <h5 class="card-title">{{cliente.nombre}}</h5>
+                  <img src="{{cliente.imagen}}" alt="imagen-cliente" class="card-img-bottom mt-3 img-fluid">
+                  <div class="card-body row">
+                      <!-- <h5 class="card-title">{{cliente.nombre}}</h5> -->
                       <h1 class="bottom-line"></h1>
-                      <p class="card-text ">{{cliente.descripcion}}</p>
-                      <a href="{{cliente.sitioWeb}}" class="btn btn-danger" target="_blank" >Ver sitio</a>
+                      <!-- <p class="card-text ">{{cliente.descripcion}}</p> -->
+                      <a href="{{cliente.sitioWeb}}" class="btn btn-danger card-title " target="_blank" >Ver sitio</a>
                   </div>
               </div>
           </div>
   </div>
 </div>
-<div class="home-fondo2 ">
 
-  <div class="container-xl"  data-aos="zoom-out-right" data-aos-duration="1500">
-      <div class="row  justify-content-center mt-5 mx-3 ">
-        <div class="fondo-transparente bg-principal col-md-12 text-dark m-5 row justify-content-center align-items-center">
-          <h2 class="text-center mt-3 "> Con Amplia Experiencia en</h2>
-          <h2 class="bottom-line"></h2>
-          <div class="col-md-3 btn  bg-white my-5 servicios-btn py-5 popup-button">
-              <h3 class="">Armado de losa</h3>
-          </div>
-          <div class="col-md-3 btn  bg-white my-5 servicios-btn mx-2 py-5 popup-button">
-              <h3 class="">Armado de columnas</h3>
-          </div>
-          <div class="col-md-3 btn  bg-white my-5 servicios-btn py-5 popup-button">
-              <h3 class="">Fondo de trabes</h3>
-          </div>
-          <div class="col-md-12 row justify-content-end">
+<!-- Experiencia en -->
+<a  class="nav-link" routerLink="projects">
+  <div class="row ">
 
-              <a routerLink="/projects" class="btn btn-danger col-md-4 mb-3 popup-button">Nuestros Proyectos</a>
+      <div class="home-fondo4 col-md-3 p-0">
+        <div class="overlay">
+          <div class="content">
+            <h1>Naves Industriales</h1>
           </div>
         </div>
       </div>
-  </div>
-</div>
+      <div class="home-fondo5 col-md-3 p-0" >
+        <div class="overlay">
+          <div class="content">
+            <h1>Edificación Vértical</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="home-fondo2 col-md-3 p-0">
+        <div class="overlay">
+          <div class="content">
+            <h1>Infraestructura</h1>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="home-fondo6 col-md-3 p-0">
+        <div class="overlay">
+          <div class="content">
+            <h1>Albañilerías</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</a>
+<!-- Termina Experiencia en -->
 <div class="home-fondo3">
     <div class="container-xl " >
         <div class="row justify-content-center mx-2 ">
