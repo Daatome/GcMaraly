@@ -15,3 +15,55 @@
     border-width: 0px 0px 3px 0px;
     border-color: rgb(8,54,255) ;
 }
+.btn-red{
+  color: var(--color2) !important;
+
+}
+
+
+
+.overlay {
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el 0.5 para ajustar la opacidad */
+  z-index: 1;
+  transition: all ease-in 0.5s;
+}
+.overlay:hover{
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia el 0.5 para ajustar la opacidad */
+
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 10px;
+}
+
+.hero-projects{
+  background-image: url("https://cdn.pixabay.com/photo/2014/01/29/20/28/architect-254579_1280.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width:768px){
+
+  .home-fondo1{
+      background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+  }
+}
+
+
+

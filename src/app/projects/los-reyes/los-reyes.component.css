@@ -1,0 +1,43 @@
+
+.overlay {
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el 0.5 para ajustar la opacidad */
+  z-index: 1;
+  transition: all ease-in 0.5s;
+}
+.overlay:hover{
+  background-color: rgba(0, 0, 0, 0.1); /* Cambia el 0.5 para ajustar la opacidad */
+
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 10px;
+}
+
+.hero-losreyes{
+  background-image:url('/assets/images/projects/losReyes/1.jpeg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width:768px){
+
+  .home-fondo1{
+      background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+  }
+}

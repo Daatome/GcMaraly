@@ -48,42 +48,42 @@
   padding-top: 40vh;
 }
 .home-fondo1{
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
+    background-image: url("/assets/images/home/fondo1.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .home-fondo2{
-    background-image: url("https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg");
+    background-image:url("/assets/images/home/fondo2.jpg");
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
 }
 .home-fondo3{
-    background-image: url("https://cdn.pixabay.com/photo/2016/02/01/21/15/excavator-1174428_960_720.jpg");
+    background-image: url("/assets/images/home/fondo3.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .home-fondo4{
-  background-image: url("https://media.licdn.com/dms/image/D5612AQH4r7nvyc-2KA/article-cover_image-shrink_720_1280/0/1687283213696?e=2147483647&v=beta&t=Ox6S_ckZ--mTnkVyqaPwjG5WMTMj25FlaJ8AQXchG90");
+  background-image:  url("/assets/images/home/fondo4.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .home-fondo5{
-  background-image: url("https://cdn.pixabay.com/photo/2023/11/24/17/22/city-8410353_1280.jpg");
+  background-image:  url("/assets/images/home/fondo5.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .home-fondo6{
-  background-image: url("https://cdn.pixabay.com/photo/2015/11/06/16/38/steelworkers-1029665_1280.jpg");
+  background-image: url("/assets/images/home/fondo6.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +93,7 @@
 @media (min-width:768px){
 
     .home-fondo1{
-        background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/30/floor-plan-1857175_960_720.jpg");
+        background-image: url("/assets/images/home/fondo1.jpg");
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -101,44 +101,52 @@
         background-attachment: fixed;
     }
     .home-fondo2{
-        background-image: url("https://cdn.pixabay.com/photo/2018/09/25/23/40/cranes-3703469_960_720.jpg");
+        background-image:url("/assets/images/home/fondo2.jpg");;
         height: 500px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom right;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
     }
     .home-fondo3{
-        background-image: url("https://cdn.pixabay.com/photo/2016/02/01/21/15/excavator-1174428_960_720.jpg");
-        height: 100%;
+        background-image: url("/assets/images/home/fondo3.jpg");
+        height:100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
     }
     .home-fondo4{
-      background-image: url("https://media.licdn.com/dms/image/D5612AQH4r7nvyc-2KA/article-cover_image-shrink_720_1280/0/1687283213696?e=2147483647&v=beta&t=Ox6S_ckZ--mTnkVyqaPwjG5WMTMj25FlaJ8AQXchG90");
+      background-image:  url("/assets/images/home/fondo4.jpg");
       height: 500px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
   }
   .home-fondo5{
-    background-image: url("https://cdn.pixabay.com/photo/2023/11/24/17/22/city-8410353_1280.jpg");
+    background-image:  url("/assets/images/home/fondo5.jpg");
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
   .home-fondo6{
-    background-image: url("https://cdn.pixabay.com/photo/2018/05/09/07/12/construction-3384691_1280.jpg");
+    background-image:url("/assets/images/home/fondo6.jpg");
     height: 500px;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center right;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+  }
+  .home-fondo7{
+    background-image:url("/assets/images/home/fondo7.jpeg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom center;
+    /* background-attachment: fixed; */
   }
 }
 

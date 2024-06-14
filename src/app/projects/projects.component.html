@@ -1,66 +1,117 @@
-<div class="container-xl bd-warning mt-5 py-5" id="inicio">
-  <h1 id="inicio"  data-aos="fade-up" >Algunos de nuestros Proyectos</h1>
-  <h2 class="bottom-line-primary mb-5"></h2>
-  <div class="row justify-content-center justify-content-md-between align-items-end">
-    <div class=" my-5 col-md-12 m-1"  >
-        <h2>Proyecto Los Reyes Park</h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="losreyesPark" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
-  
-    </div>
-    <div class=" my-5 col-md-5 m-1"  >
-      <h2>Proyecto Olimpo Park</h2>
+<div class="hero-projects bg-dark">
+<div class="overlay">
+  <div class="content ">
+    <h1 id="inicio"  data-aos="fade-up" class="mb-5" > Nuestros Proyectos</h1>
+  </div>
+</div>
+</div>
+
+<div class=" p-3">
+
+  <div class="  mb-5  "  >
+    <h2 class="" data-aos="fade-up">KAVI</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+    [images]="kavi" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+  </div>
+
+  <div class="    "  >
+      <h2 class="" data-aos="fade-up">Los Reyes Park</h2>
       <h3 class="bottom-line-secondary mb-5"></h3>
-      <ng-image-slider [images]="olimpoPark" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+      <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="losreyesPark" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+  </div>
+  <div class=" my-5  m-1"  >
+    <h2 data-aos="fade-up">Olimpo Park</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+    [images]="olimpoPark" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
 
-    </div>
-    <div class=" my-5 col-md-5 m-1"  >
-        <h2>Proyecto Mitikah</h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="mitikah" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+  </div>
+  <div class=" my-5  m-1"  >
+    <h2 data-aos="fade-up">Mitikah Centro Comercial</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="mitikah" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
 
-    </div>
-    <div class=" my-5 col-md-5 m-1"   >
-        <h2>Sears Averanda </h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="searsAveranda" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
-
-    </div>
-    <div class=" my-5 col-md-5 m-1"   >
-        <h2>Plaza Citadina </h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="plazaCitadina" [animationSpeed]="0.5" #nav ></ng-image-slider>
-
-    </div>
-    <div class=" my-5 col-md-5 m-1"   >
-        <h2>Proyecto La Viga</h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="laViga" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
-
-    </div>
-    <div class=" my-5 col-md-5 m-1"   >
-        <h2>Proyecto Plaza Puerta La Victoria</h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="plazaPuertaLaVictoria" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
-
-    </div>
-
-    <div class=" my-5 col-md-5 m-1"   >
-        <h2>Remodelación Del CETRAM De Metro Zapata</h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="metroZapata" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
-
-    </div>
-    <div class=" my-5 col-md-5 m-1"   >
-        <h2>Trabajos en Avenida Universidad</h2>
-        <h3 class="bottom-line-secondary mb-5"></h3>
-        <ng-image-slider [images]="avenidaUniversidad" [animationSpeed]="0.5" [lazyLoading]="true" #nav ></ng-image-slider>
-
-    </div>
+  </div>
+  <div class=" my-5  m-1"  >
+    <h2 data-aos="fade-up">Centro de Salud Xoco</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="centroSalud" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
 
   </div>
 
+  <div class=" my-5  m-1"  >
+    <h2 data-aos="fade-up">Centro Bancomer</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="centroBancomer" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
 
+  </div>
+
+  <div class=" my-5  m-1"  >
+    <h2 data-aos="fade-up">Helipuerto Mitikah</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="helipuerto" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+
+  </div>
+  <div class=" my-5  m-1"   >
+    <h2 data-aos="fade-up">Sears Averanda </h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="searsAveranda" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+
+  </div>
+  <div class=" my-5  m-1"   >
+    <h2 data-aos="fade-up">Plaza Citadina </h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="plazaCitadina" [animationSpeed]="0.5" #nav ></ng-image-slider>
+
+  </div>
+  <!-- <div class=" my-5  m-1"   >
+    <h2 data-aos="fade-up">Proyecto La Viga</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="laViga" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+
+  </div> -->
+  <div class=" my-5  m-1"   >
+    <h2 data-aos="fade-up">Plaza Puerta La Victoria</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="plazaPuertaLaVictoria" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+
+  </div>
+
+  <div class=" my-5  m-1"   >
+    <h2 data-aos="fade-up"> Remodelación CETRAM Zapata</h2>
+    <h3 class="bottom-line-secondary mb-5"></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="metroZapata" [animationSpeed]="0.5" [lazyLoading]="true" [infinite]="true" #nav ></ng-image-slider>
+
+  </div>
+  <div class=" my-5  m-1"   >
+    <h2 data-aos="fade-up">Trabajos en Avenida Universidad</h2>
+    <h3 class="bottom-line-secondary mb-5" ></h3>
+    <ng-image-slider [imageSize]="{width: scrWidth>900 ? '30%' : '100%', height: '50%', space: 0}"
+      [images]="avenidaUniversidad" [animationSpeed]="0.5" [lazyLoading]="true" #nav ></ng-image-slider>
+
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 <app-footer></app-footer>

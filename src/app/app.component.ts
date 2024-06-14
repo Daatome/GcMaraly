@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
 import * as  AOS from "aos";
 
 
@@ -6,6 +6,7 @@ import * as  AOS from "aos";
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+
 
 })
 export class AppComponent {

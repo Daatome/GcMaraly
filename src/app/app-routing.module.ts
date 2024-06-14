@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { LosReyesComponent } from './projects/los-reyes/los-reyes.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:'projects', component: ProjectsComponent},
   {path:'home', component: HomeComponent},
   {path:'contact', component: ContactComponent},
+  {path:'projects/losreyes', component: LosReyesComponent},
   {path:'**', component: PageNotFoundComponent}
 ];
 

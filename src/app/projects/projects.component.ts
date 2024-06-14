@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit, HostListener } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-projects',
@@ -7,77 +9,244 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  // Declare height and width variables
+  scrHeight:any;
+  scrWidth:any;
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize() {
+        this.scrHeight = window.innerHeight;
+        this.scrWidth = window.innerWidth;
+        console.log(this.scrHeight, this.scrWidth);
+  }
+
+  // Constructor
+  constructor() {
+      this.getScreenSize();
+
+  }
+
+
+
   losreyesPark: Array<object>= [
     {
-      image: 'assets/images/projects/losReyes/1.png',
-      thumbImage: 'assets/images/projects/losReyes/1.png',
+      image: 'assets/images/projects/losReyes/1.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/1.jpeg',
       alt: 'Los Reyes',
       order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
 
     },
     {
-      image: 'assets/images/projects/losReyes/2.png',
-      thumbImage: 'assets/images/projects/losReyes/2.png',
+      image: 'assets/images/projects/losReyes/2.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/2.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/3.png',
-      thumbImage: 'assets/images/projects/losReyes/3.png',
+      image: 'assets/images/projects/losReyes/3.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/3.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/4.png',
-      thumbImage: 'assets/images/projects/losReyes/4.png',
+      image: 'assets/images/projects/losReyes/4.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/4.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/5.png',
-      thumbImage: 'assets/images/projects/losReyes/5.png',
+      image: 'assets/images/projects/losReyes/5.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/5.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/6.png',
-      thumbImage: 'assets/images/projects/losReyes/6.png',
+      image: 'assets/images/projects/losReyes/6.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/6.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/7.png',
-      thumbImage: 'assets/images/projects/losReyes/7.png',
+      image: 'assets/images/projects/losReyes/7.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/7.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/8.png',
-      thumbImage: 'assets/images/projects/losReyes/8.png',
+      image: 'assets/images/projects/losReyes/8.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/8.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/9.png',
-      thumbImage: 'assets/images/projects/losReyes/9.png',
+      image: 'assets/images/projects/losReyes/9.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/9.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/10.png',
-      thumbImage: 'assets/images/projects/losReyes/10.png',
+      image: 'assets/images/projects/losReyes/10.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/10.jpeg',
       alt: 'Los Reyes',
 
     },
     {
-      image: 'assets/images/projects/losReyes/11.png',
-      thumbImage: 'assets/images/projects/losReyes/11.png',
+      image: 'assets/images/projects/losReyes/11.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/11.jpeg',
       alt: 'Los Reyes',
 
     },
-    
+    {
+      image: 'assets/images/projects/losReyes/12.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/12.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/13.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/13.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/14.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/14.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/15.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/15.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/16.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/16.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/17.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/17.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/18.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/18.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/19.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/19.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/20.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/20.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/21.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/21.jpeg',
+      alt: 'Los Reyes',
+
+    },
+    {
+      image: 'assets/images/projects/losReyes/22.jpeg',
+      thumbImage: 'assets/images/projects/losReyes/22.jpeg',
+      alt: 'Los Reyes',
+
+    },
+
   ];
 
+  kavi: Array<object>= [
+    {
+      image: 'assets/images/projects/kavi/1.jpeg',
+      thumbImage: 'assets/images/projects/kavi/1.jpeg',
+      alt: 'KAVI',
+      order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
+
+    },
+    {
+      image: 'assets/images/projects/kavi/2.jpeg',
+      thumbImage: 'assets/images/projects/kavi/2.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/3.jpeg',
+      thumbImage: 'assets/images/projects/kavi/3.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/4.jpeg',
+      thumbImage: 'assets/images/projects/kavi/4.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/5.jpeg',
+      thumbImage: 'assets/images/projects/kavi/5.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/6.jpeg',
+      thumbImage: 'assets/images/projects/kavi/6.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/7.jpeg',
+      thumbImage: 'assets/images/projects/kavi/7.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/8.jpeg',
+      thumbImage: 'assets/images/projects/kavi/8.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/9.jpeg',
+      thumbImage: 'assets/images/projects/kavi/9.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/10.jpeg',
+      thumbImage: 'assets/images/projects/kavi/10.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/11.jpeg',
+      thumbImage: 'assets/images/projects/kavi/11.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/12.jpeg',
+      thumbImage: 'assets/images/projects/kavi/12.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/13.jpeg',
+      thumbImage: 'assets/images/projects/kavi/13.jpeg',
+      alt: 'KAVI',
+
+    },
+
+  ];
 
   olimpoPark: Array<object>= [
     {
@@ -205,130 +374,201 @@ export class ProjectsComponent {
 
   mitikah: Array<object> = [
     {
-      image: 'assets/images/projects/mitikah/1.png',
-      thumbImage: 'assets/images/projects/mitikah/1.png',
+      image: 'assets/images/projects/mitikah/1.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/1.jpeg',
       alt: 'mitikah',
       order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
 
     },
     {
-      image: 'assets/images/projects/mitikah/2.png',
-      thumbImage: 'assets/images/projects/mitikah/2.png',
+      image: 'assets/images/projects/mitikah/2.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/2.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/3.png',
-      thumbImage: 'assets/images/projects/mitikah/3.png',
+      image: 'assets/images/projects/mitikah/3.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/3.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/4.png',
-      thumbImage: 'assets/images/projects/mitikah/4.png',
+      image: 'assets/images/projects/mitikah/4.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/4.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/5.png',
-      thumbImage: 'assets/images/projects/mitikah/5.png',
+      image: 'assets/images/projects/mitikah/5.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/5.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/6.png',
-      thumbImage: 'assets/images/projects/mitikah/6.png',
+      image: 'assets/images/projects/mitikah/6.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/6.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/7.png',
-      thumbImage: 'assets/images/projects/mitikah/7.png',
+      image: 'assets/images/projects/mitikah/7.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/7.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/8.png',
-      thumbImage: 'assets/images/projects/mitikah/8.png',
+      image: 'assets/images/projects/mitikah/8.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/8.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/9.png',
-      thumbImage: 'assets/images/projects/mitikah/9.png',
+      image: 'assets/images/projects/mitikah/9.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/9.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/10.png',
-      thumbImage: 'assets/images/projects/mitikah/10.png',
+      image: 'assets/images/projects/mitikah/10.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/10.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/11.png',
-      thumbImage: 'assets/images/projects/mitikah/11.png',
+      image: 'assets/images/projects/mitikah/11.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/11.jpeg',
       alt: 'mitikah',
     },
     {
-      image: 'assets/images/projects/mitikah/12.png',
-      thumbImage: 'assets/images/projects/mitikah/12.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/13.png',
-      thumbImage: 'assets/images/projects/mitikah/13.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/14.png',
-      thumbImage: 'assets/images/projects/mitikah/14.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/15.png',
-      thumbImage: 'assets/images/projects/mitikah/15.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/16.png',
-      thumbImage: 'assets/images/projects/mitikah/16.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/instalacionDeTuberias.png',
-      thumbImage: 'assets/images/projects/mitikah/instalacionDeTuberias.png',
-      title:"Instalación de tuberias",
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/17.png',
-      thumbImage: 'assets/images/projects/mitikah/17.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/18.png',
-      thumbImage: 'assets/images/projects/mitikah/18.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/19.png',
-      thumbImage: 'assets/images/projects/mitikah/19.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/20.png',
-      thumbImage: 'assets/images/projects/mitikah/20.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/21.png',
-      thumbImage: 'assets/images/projects/mitikah/21.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/22.png',
-      thumbImage: 'assets/images/projects/mitikah/22.png',
-      alt: 'mitikah',
-    },
-    {
-      image: 'assets/images/projects/mitikah/23.png',
-      thumbImage: 'assets/images/projects/mitikah/23.png',
+      image: 'assets/images/projects/mitikah/12.jpeg',
+      thumbImage: 'assets/images/projects/mitikah/12.jpeg',
       alt: 'mitikah',
     },
 
+
   ];
+  centroBancomer: Array<object> = [
+    {
+      image: 'assets/images/projects/centroBancomer/1.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/1.jpeg',
+      alt: 'centroBancomer',
+      order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
+
+    },
+    {
+      image: 'assets/images/projects/centroBancomer/2.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/2.jpeg',
+      alt: 'centroBancomer',
+    },
+    {
+      image: 'assets/images/projects/centroBancomer/3.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/3.jpeg',
+      alt: 'centroBancomer',
+    },
+    {
+      image: 'assets/images/projects/centroBancomer/4.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/4.jpeg',
+      alt: 'centroBancomer',
+    },
+    {
+      image: 'assets/images/projects/centroBancomer/5.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/5.jpeg',
+      alt: 'centroBancomer',
+    },
+    {
+      image: 'assets/images/projects/centroBancomer/6.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/6.jpeg',
+      alt: 'centroBancomer',
+    },
+    {
+      image: 'assets/images/projects/centroBancomer/7.jpeg',
+      thumbImage: 'assets/images/projects/centroBancomer/7.jpeg',
+      alt: 'centroBancomer',
+    },
+
+
+
+  ];
+
+  centroSalud: Array<object> = [
+    {
+      image: 'assets/images/projects/centroSalud/1.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/1.jpeg',
+      alt: 'centroSalud',
+      order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
+
+    },
+    {
+      image: 'assets/images/projects/centroSalud/2.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/2.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/3.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/3.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/4.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/4.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/5.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/5.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/6.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/6.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/7.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/7.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/8.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/8.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/9.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/9.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/10.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/10.jpeg',
+      alt: 'centroSalud',
+    },
+    {
+      image: 'assets/images/projects/centroSalud/11.jpeg',
+      thumbImage: 'assets/images/projects/centroSalud/11.jpeg',
+      alt: 'centroSalud',
+    },
+
+
+
+  ];
+
+  helipuerto: Array<object> = [
+    {
+      image: 'assets/images/projects/helipuertoMitikah/1.jpeg',
+      thumbImage: 'assets/images/projects/helipuertoMitikah/1.jpeg',
+      alt: 'helipuertoMitikah',
+      order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
+
+    },
+    {
+      image: 'assets/images/projects/helipuertoMitikah/2.jpeg',
+      thumbImage: 'assets/images/projects/helipuertoMitikah/2.jpeg',
+      alt: 'helipuertoMitikah',
+    },
+    {
+      image: 'assets/images/projects/helipuertoMitikah/3.jpeg',
+      thumbImage: 'assets/images/projects/helipuertoMitikah/3.jpeg',
+      alt: 'helipuertoMitikah',
+    },
+
+
+
+
+  ];
+
+
   avenidaUniversidad: Array<object> = [
     {
       image: 'assets/images/projects/avenidaUniversidad/1.png',
@@ -499,137 +739,98 @@ export class ProjectsComponent {
   ];
   plazaCitadina: Array<object> = [
     {
-      image: 'assets/images/projects/plazaCitadina/1.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/1.png',
+      image: 'assets/images/projects/plazaCitadina/1.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/1.jpeg',
       alt: 'plazaCitadina',
       order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
 
     },
     {
-      image: 'assets/images/projects/plazaCitadina/2.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/2.png',
+      image: 'assets/images/projects/plazaCitadina/2.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/2.jpeg',
       alt: 'plazaCitadina',
     },
     {
-      image: 'assets/images/projects/plazaCitadina/3.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/3.png',
+      image: 'assets/images/projects/plazaCitadina/3.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/3.jpeg',
       alt: 'plazaCitadina',
     },
     {
-      image: 'assets/images/projects/plazaCitadina/4.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/4.png',
+      image: 'assets/images/projects/plazaCitadina/4.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/4.jpeg',
       alt: 'plazaCitadina',
     },
     {
-      image: 'assets/images/projects/plazaCitadina/5.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/5.png',
+      image: 'assets/images/projects/plazaCitadina/5.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/5.jpeg',
       alt: 'plazaCitadina',
     },
     {
-      image: 'assets/images/projects/plazaCitadina/6.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/6.png',
+      image: 'assets/images/projects/plazaCitadina/6.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/6.jpeg',
       alt: 'plazaCitadina',
     },
     {
-      image: 'assets/images/projects/plazaCitadina/7.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/7.png',
+      image: 'assets/images/projects/plazaCitadina/7.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/7.jpeg',
       alt: 'plazaCitadina',
     },
     {
-      image: 'assets/images/projects/plazaCitadina/8.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/8.png',
-      alt: 'plazaCitadina',
-    },
-    {
-      image: 'assets/images/projects/plazaCitadina/9.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/9.png',
-      alt: 'plazaCitadina',
-    },
-    {
-      image: 'assets/images/projects/plazaCitadina/10.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/10.png',
-      alt: 'plazaCitadina',
-    },
-    {
-      image: 'assets/images/projects/plazaCitadina/11.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/11.png',
-      alt: 'plazaCitadina',
-    },
-    {
-      image: 'assets/images/projects/plazaCitadina/12.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/12.png',
-      alt: 'plazaCitadina',
-    },
-    {
-      image: 'assets/images/projects/plazaCitadina/13.png',
-      thumbImage: 'assets/images/projects/plazaCitadina/13.png',
+      image: 'assets/images/projects/plazaCitadina/8.jpeg',
+      thumbImage: 'assets/images/projects/plazaCitadina/8.jpeg',
       alt: 'plazaCitadina',
     },
 
   ];
   plazaPuertaLaVictoria: Array<object> = [
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/1.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/1.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/1.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/1.jpeg',
       alt: 'plazaPuertaLaVictoria',
       order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
 
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/2.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/2.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/2.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/2.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/3.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/3.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/3.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/3.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/4.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/4.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/4.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/4.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/5.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/5.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/5.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/5.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/6.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/6.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/6.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/6.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/7.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/7.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/7.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/7.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/8.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/8.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/8.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/8.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
     {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/9.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/9.png',
+      image: 'assets/images/projects/plazaPuertaLaVictoria/9.jpeg',
+      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/9.jpeg',
       alt: 'plazaPuertaLaVictoria',
     },
-    {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/10.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/10.png',
-      alt: 'plazaPuertaLaVictoria',
-    },
-    {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/11.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/11.png',
-      alt: 'plazaPuertaLaVictoria',
-    },
-    {
-      image: 'assets/images/projects/plazaPuertaLaVictoria/12.png',
-      thumbImage: 'assets/images/projects/plazaPuertaLaVictoria/12.png',
-      alt: 'plazaPuertaLaVictoria',
-    },
+
 
   ];
   searsAveranda: Array<object> = [
@@ -665,11 +866,7 @@ export class ProjectsComponent {
       thumbImage: 'assets/images/projects/searsAveranda/6.png',
       alt: 'searsAveranda',
     },
-    {
-      image: 'assets/images/projects/searsAveranda/7.png',
-      thumbImage: 'assets/images/projects/searsAveranda/7.png',
-      alt: 'searsAveranda',
-    },
+
   ];
 
 

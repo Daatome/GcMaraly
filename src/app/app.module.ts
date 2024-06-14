@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule,  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -14,8 +14,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { NgOptimizedImage } from '@angular/common';
-
 import { NgImageSliderModule} from 'ng-image-slider';
+import { LosReyesComponent } from './projects/los-reyes/los-reyes.component';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { NgImageSliderModule} from 'ng-image-slider';
     AboutUsComponent,
     ContactComponent,
     ServiciosComponent,
-    FooterComponent
+    FooterComponent,
+    LosReyesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +38,8 @@ import { NgImageSliderModule} from 'ng-image-slider';
     NgOptimizedImage,
     NgImageSliderModule
   ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+
   providers: [],
   bootstrap: [AppComponent],
 
