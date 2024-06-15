@@ -46,6 +46,7 @@
   color: white;
   text-align: center;
   padding-top: 40vh;
+  margin-bottom: 50px;
 }
 .home-fondo1{
     background-image: url("/assets/images/home/fondo1.jpg");
@@ -56,7 +57,7 @@
 }
 .home-fondo2{
     background-image:url("/assets/images/home/fondo2.jpg");
-    height: 500px;
+    /* height: 500px; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
@@ -70,21 +71,29 @@
 }
 .home-fondo4{
   background-image:  url("/assets/images/home/fondo4.jpg");
-  height: 500px;
+  /* height: 500px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .home-fondo5{
   background-image:  url("/assets/images/home/fondo5.jpg");
-  height: 500px;
+  /* height: 500px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .home-fondo6{
   background-image: url("/assets/images/home/fondo6.jpg");
-  height: 500px;
+  /* height: 500px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-fondo7{
+  background-image: url("/assets/images/home/fondo7.jpeg");
+  /* height: 500px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -102,7 +111,7 @@
     }
     .home-fondo2{
         background-image:url("/assets/images/home/fondo2.jpg");;
-        height: 500px;
+        /* height: 500px; */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom right;
@@ -118,7 +127,7 @@
     }
     .home-fondo4{
       background-image:  url("/assets/images/home/fondo4.jpg");
-      height: 500px;
+      /* height: 500px; */
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -126,7 +135,7 @@
   }
   .home-fondo5{
     background-image:  url("/assets/images/home/fondo5.jpg");
-    height: 500px;
+    /* height: 500px; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
@@ -134,7 +143,7 @@
   }
   .home-fondo6{
     background-image:url("/assets/images/home/fondo6.jpg");
-    height: 500px;
+    /* height: 500px; */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center right;
@@ -142,7 +151,7 @@
   }
   .home-fondo7{
     background-image:url("/assets/images/home/fondo7.jpeg");
-    height: 500px;
+    /* height: 500px; */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom center;
