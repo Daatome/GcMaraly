@@ -245,6 +245,24 @@ export class ProjectsComponent {
       alt: 'KAVI',
 
     },
+    {
+      image: 'assets/images/projects/kavi/14.jpeg',
+      thumbImage: 'assets/images/projects/kavi/14.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/15.jpeg',
+      thumbImage: 'assets/images/projects/kavi/15.jpeg',
+      alt: 'KAVI',
+
+    },
+    {
+      image: 'assets/images/projects/kavi/16.jpeg',
+      thumbImage: 'assets/images/projects/kavi/16.jpeg',
+      alt: 'KAVI',
+
+    },
 
   ];
 

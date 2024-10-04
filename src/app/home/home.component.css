@@ -4,7 +4,9 @@
     --color3: rgb(8,54,255);
     --color4: rgb(0,0,0,0);
 }
-
+li{
+  list-style: none;
+}
 .bottom-line{
     border: solid;
     border-width: 0px 0px 3px 0px;
@@ -44,9 +46,10 @@
   position: relative;
   z-index: 2;
   color: white;
-  text-align: center;
+  text-align: end;
   padding-top: 40vh;
   margin-bottom: 50px;
+  margin-right: 50px;
 }
 .home-fondo1{
     background-image: url("/assets/images/home/fondo1.jpg");
